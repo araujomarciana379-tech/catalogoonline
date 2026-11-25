@@ -13,6 +13,8 @@ Tudo que identifica a empresa fica em poucos lugares:
 
 Cada empresa tem o seu próprio projeto no Supabase e na Vercel (dados separados).
 
+> Projeto novo do Supabase: depois das migrações 01 a 19, aplique também a 20 (permissões das tabelas), senão o catálogo não carrega.
+
 Catálogos em formato flipbook (virar página) com áreas clicáveis, carrinho e envio do pedido por WhatsApp.
 Next.js 16 + Tailwind 4 + Supabase.
 
