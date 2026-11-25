@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f1a24;
+
+  /* ===== Cores da marca (troque aqui para outra empresa) ===== */
+  --marca: #844f99;         /* botões, títulos, links */
+  --marca-hover: #6d3e80;   /* botão ao passar o mouse */
+  --marca-escuro: #4b2a5c;  /* cabeçalhos e faixas escuras (igual a COR_TEMA em src/lib/site.ts) */
+  --marca-noite: #36203f;   /* tom mais escuro, para degradês */
+  --marca-suave: #eadcf0;   /* texto sobre fundo escuro */
+  --destaque: #f2bed9;      /* segunda cor da marca (detalhes, selos) */
+  --destaque-forte: #e79ec4;
+  --creme: #fbf6fa;         /* fundo claro de seções */
+  --texto: #3d3445;         /* texto corrido */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-marca: var(--marca);
+  --color-marca-hover: var(--marca-hover);
+  --color-marca-escuro: var(--marca-escuro);
+  --color-marca-noite: var(--marca-noite);
+  --color-marca-suave: var(--marca-suave);
+  --color-destaque: var(--destaque);
+  --color-destaque-forte: var(--destaque-forte);
+  --color-creme: var(--creme);
+  --color-texto: var(--texto);
+  --font-sans: var(--font-corpo);
+  --font-titulo: var(--font-titulo-marca);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-corpo), system-ui, sans-serif;
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Troca de página: entra pelo lado para onde o cliente avançou. */
+@keyframes entra-dir {
+  from { opacity: 0; transform: translateX(24px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes entra-esq {
+  from { opacity: 0; transform: translateX(-24px); }
+  to { opacity: 1; transform: none; }
+}

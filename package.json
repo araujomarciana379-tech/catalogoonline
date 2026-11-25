@@ -1,0 +1,38 @@
+{
+  "name": "raio-de-luz-catalogo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "importar-pdf": "node scripts/importar-pdf.mjs",
+    "importar-produtos": "node scripts/importar-produtos.mjs",
+    "typecheck": "tsc --noEmit",
+    "importar-planilha": "node scripts/importar-planilha.mjs",
+    "postinstall": "node scripts/copiar-worker-pdf.mjs",
+    "prebuild": "node scripts/copiar-worker-pdf.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "exceljs": "^4.4.0",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8",
+    "next": "16.4.6",
+    "pdfjs-dist": "^6.4.299",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@napi-rs/canvas": "^1.0.10",
+    "@tailwindcss/turbopack": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
