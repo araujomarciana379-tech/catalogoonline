@@ -90,7 +90,7 @@ function PedirWhatsapp() {
   }
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[radial-gradient(ellipse_at_top,#1b2766_0%,#0b1030_65%)] p-4" role="dialog" aria-modal="true" aria-labelledby="titulo-cadastro">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-[radial-gradient(ellipse_at_top,var(--marca)_0%,var(--marca-noite)_70%)] p-4" role="dialog" aria-modal="true" aria-labelledby="titulo-cadastro">
       <form onSubmit={entrar} className="w-full max-w-sm space-y-4 rounded-2xl bg-white p-6 text-slate-900 shadow-2xl">
         <div className="text-center">
           {/* eslint-disable-next-line @next/next/no-img-element */}
